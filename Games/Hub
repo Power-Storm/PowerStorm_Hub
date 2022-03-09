@@ -6,5 +6,5 @@ CodeFrame:ClearAllChildren()
 local myGame = game.PlaceId
 
 if myGame == 537413528 then
-    print("BABFT")
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/Power-Storm/PowerStorm_Hub/main/Games/List/babft")()
 end
