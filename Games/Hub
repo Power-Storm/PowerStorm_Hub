@@ -1,3 +1,5 @@
+print("Hub check")
+
 local ScreenGui = game:getService("CoreGui").PowerStorm_Hub
 local CodeFrame = ScreenGui.Container.MainFrame.CodeFrame
 
