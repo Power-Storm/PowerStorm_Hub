@@ -1,1 +1,2 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Power-Storm/PowerStorm_Hub/main/Database/Functions/CreateFolder"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Power-Storm/PowerStorm_Hub/main/Database/Functions/CreateKeyFile"))()
