@@ -1,2 +1,1 @@
-local atlas = {fossil}
-return atlas
+return {"fossil"}
