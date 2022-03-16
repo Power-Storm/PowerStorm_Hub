@@ -1,0 +1,10 @@
+local log = {
+    "What's new?",
+    "◈ added build a boat for treasure script",
+    "",
+    "",
+    "",
+    "",
+}
+
+return log
