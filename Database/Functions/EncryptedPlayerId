@@ -1,0 +1,12 @@
+-- Int to Binary
+function toBinary(num)
+    local t={}
+    while num>0 do
+        rest=math.fmod(num,2)
+        t[#t+1]=rest
+        num=(num-rest)/2
+    end
+    return table.concat(t)
+end
+
+return toBinary(game.Players.LocalPlayer.UserId)
