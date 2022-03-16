@@ -1,0 +1,25 @@
+local myId = game.Players.LocalPlayer.UserId
+
+if isfile("PowerStorm_Database/"..myId.."/Settings.txt") then
+else
+    writefile("PowerStorm_Database/"..myId.."/Settings.txt", "local Settings = {}\nreturn Settings")
+end
+
+local filedata = loadstring(readfile("PowerStorm_Database/"..myId.."/Settings.txt"))
+local contents = filedata()
+
+local newContents = "local Settings = {"
+
+if contents["AutoExec"] ~= nil then
+    newContents = newContents.."AutoExec =\""..contents["AutoExec"].."\""
+else
+    newContents = newContents.."AutoExec = false"
+end
+
+if contents["Theme"] ~= nil then
+    newContents = newContents..",Theme =\""..contents["Theme"].."\""
+else
+    newContents = newContents..",Theme =\"Dark\""
+end
+
+writefile("PowerStorm_Database/"..myId.."/Settings.txt", newContents.."}\nreturn Settings")
