@@ -1,5 +1,5 @@
 local myId = game.Players.LocalPlayer.UserId
-
+print("RUNNING")
 if isfile("PowerStorm_Database/"..myId.."/Settings.txt") then
 else
     writefile("PowerStorm_Database/"..myId.."/Settings.txt", "local Settings = {}\nreturn Settings")
