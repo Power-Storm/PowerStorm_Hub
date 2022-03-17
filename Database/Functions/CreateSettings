@@ -12,7 +12,7 @@ local contents = filedata()
 print("shs2")
 local newContents = "local Settings = {"
 print("shwws")
-if contents["AutoExec"] ~= nil then
+if contents["AutoExec"] then
 print("shwwwww22ws")
     newContents = newContents.."AutoExec =\""..contents["AutoExec"].."\""
     print("shwwwws")
