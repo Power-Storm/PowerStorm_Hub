@@ -13,6 +13,7 @@ print("shs2")
 local newContents = "local Settings = {"
 print("shwws")
 if contents["AutoExec"] ~= nil then
+print("shwwwww22ws")
     newContents = newContents.."AutoExec =\""..contents["AutoExec"].."\""
     print("shwwwws")
 else
