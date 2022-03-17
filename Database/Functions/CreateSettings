@@ -21,7 +21,7 @@ else
     print("shswee")
 end
 print("shwwws")
-if contents["Theme"] ~= nil then
+if contents["Theme"] then
     newContents = newContents..",Theme =\""..contents["Theme"].."\""
     print("shwewes")
 else
