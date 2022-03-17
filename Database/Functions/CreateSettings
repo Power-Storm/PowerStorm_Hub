@@ -1,25 +1,32 @@
 local myId = game.Players.LocalPlayer.UserId
 
+print("shs")
 if isfile("PowerStorm_Database/"..myId.."/Settings.txt") then
 else
     writefile("PowerStorm_Database/"..myId.."/Settings.txt", "local Settings = {}\nreturn Settings")
 end
-
+print("shs1")
 local filedata = loadstring(readfile("PowerStorm_Database/"..myId.."/Settings.txt"))
+print("shs22")
 local contents = filedata()
-
+print("shs2")
 local newContents = "local Settings = {"
-
+print("shwws")
 if contents["AutoExec"] ~= nil then
     newContents = newContents.."AutoExec =\""..contents["AutoExec"].."\""
+    print("shwwwws")
 else
     newContents = newContents.."AutoExec = false"
+    print("shswee")
 end
-
+print("shwwws")
 if contents["Theme"] ~= nil then
     newContents = newContents..",Theme =\""..contents["Theme"].."\""
+    print("shwewes")
 else
     newContents = newContents..",Theme =\"Dark\""
+    print("shewes")
 end
-
+print("shszz")
 writefile("PowerStorm_Database/"..myId.."/Settings.txt", newContents.."}\nreturn Settings")
+print("swwwwwwdhs")
