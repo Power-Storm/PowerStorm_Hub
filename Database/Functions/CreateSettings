@@ -11,13 +11,13 @@ local contents = filedata()
 local newContents = "local Settings = {"
 
 if contents["AutoExec"] then
-    newContents = newContents.."AutoExec =\""..contents["AutoExec"].."\""
+    newContents = newContents.."AutoExec =\""..tostring(contents["AutoExec"]).."\""
 else
     newContents = newContents.."AutoExec = false"
 end
 
 if contents["Theme"] then
-    newContents = newContents..",Theme =\""..contents["Theme"].."\""
+    newContents = newContents..",Theme =\""..tostring(contents["Theme"]).."\""
 else
     newContents = newContents..",Theme =\"Dark\""
 end
