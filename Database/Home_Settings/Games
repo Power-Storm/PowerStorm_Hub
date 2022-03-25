@@ -1,6 +1,7 @@
 local log = {
     --"",
-    "Build A Boat For Treasure - 537413528"
+    "Build A Boat For Treasure - 537413528",
+    "Murder Mystery 2 - 142823291"
 }
 
 return log
